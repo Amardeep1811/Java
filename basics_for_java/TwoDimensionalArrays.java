@@ -41,6 +41,11 @@ public class TwoDimensionalArrays {
                 System.out.print(arr1[i][j] + " ");
             System.out.println();
         }
+
+        int[][] arr2 = { { 1, 2 }, 
+                       	{ 3, 4 } };
+      
+		System.out.println("a[1][1] : " + arr2[1][1]);
     }
 }
 
