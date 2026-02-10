@@ -2,11 +2,33 @@ class Student {
     private String name;
     private int rollNo;
 
-    public Student(String name , int rollNo) {
+    // Constructor
+    public Student(String name, int rollNo) {
         this.name = name;
         this.rollNo = rollNo;
     }
+
+    // Getter for name
+    public String getName() {
+        return this.name;
+    }
+
+    // Getter for rollNo
+    public int getRollNo() {
+        return this.rollNo;
+    }
+
+    // Setter for name
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Setter for rollNo
+    public void setRollNo(int rollNo) {
+        this.rollNo = rollNo;
+    }
 }
+
 
 public class Arrays{
     public static void main(String[] args) {
@@ -21,6 +43,6 @@ public class Arrays{
         studentArray[4] = new Student("Mohit" ,201);
 
          for (int i = 0; i < studentArray.length; i++)
-            System.out.println("Element at " + i + " : { " + studentArray[i].name + " "+ studentArray[i].rollNo+" }");
+            System.out.println("Element at " + i + " : { " + studentArray[i].getName() + " "+ studentArray[i].getRollNo()+" }");
     }
 }
